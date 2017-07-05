@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   before_action :set_user, only: [:show, :update, :destroy]
   skip_before_action :authenticate_user!, only: [:index, :show]
   # GET /users
+
   def index
     @users = User.all
 

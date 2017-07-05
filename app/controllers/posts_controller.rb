@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :update, :destroy]
-
+  skip_before_action :authenticate_user!, only: [:index, :show]
   # GET /posts
   def index
     @posts = Post.all
@@ -10,7 +10,7 @@ class PostsController < ApplicationController
 
   # GET /posts/1
   def show
-    render json: @post, include: ['comments.user']
+    render json: @post
   end
 
   # POST /posts
