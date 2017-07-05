@@ -1,24 +1,9 @@
-# README
+# SOLACE PROPERTY RENTAL
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### The main aim of this project was to simply work on my Ruby skills
 
-Things you may want to cover:
+## I decided that I wanted to take a step further than a simple Rails blog so I decided to make an estate agency app.
 
-* Ruby version
+# By allowing people to upload their own properties and have a contact form so people can contact them directly.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The API was built in Rails and the front end was built with Angular
