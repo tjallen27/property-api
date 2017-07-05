@@ -22,7 +22,7 @@ gem 'jwt'
 
 gem 'carrierwave'
 gem 'carrierwave-base64'
-gem 'fog-aws'
+gem 'fog'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
