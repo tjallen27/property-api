@@ -5,7 +5,7 @@ class Auth
 
   def self.issue(payload, expiry_in_minutes=60*24*30)
     payload[:exp] = expiry_in_minutes.minutes.from_now.to_i
-    JWT.to_s.encode(payload, auth_secret, ALGORITHM)
+    JWT.encode(payload, auth_secret, ALGORITHM)
   end
 
   def self.decode(token, leeway=0)
